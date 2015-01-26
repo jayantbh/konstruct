@@ -33,27 +33,8 @@ body{
 .hidden{
 	display: none;
 }
-video { 
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	background: url('css/LoopVid/frame.jpg') no-repeat;
-	background-size: cover;
-	transition: 1s opacity;
-}
-#content	 {
-	background: rgba(0,0,0,0.3);
-}
-@media screen and (max-width: 500px) { 
-	div{width:70%;} 
-}
-@media screen and (max-device-width: 800px) {
-	html { background: url('css/LoopVid/frame.jpg') #000 no-repeat center center cover; }
-	#bgvid { display: none; }
+video{
+	display: none;
 }
 .welcome{
 	height: 100%;
@@ -62,7 +43,7 @@ video {
 	background-position: center;
 	background-repeat: no-repeat;
 	.welcomeInfo{
-		width: 470px;
+		width: 420px;
 		height: 60%;
 		position: absolute;
 		top: 0;
@@ -81,14 +62,13 @@ video {
 		}
 		h2{
 			font-size: 2em;
-			margin-top: 20px;
 		}
 		h3{
-			font-size: 1.5em;
+			font-size: 1.4em;
 		}
 		img{
-			height: 180px;
-			width: 180px;
+			height: 200px;
+			width: 200px;
 			border-radius: 50%;
 			//-webkit-animation: bubbles 7s infinite ease-in-out;
 		}
@@ -113,15 +93,15 @@ video {
 .header{
 	position: relative;
 	background-color: #111;
-	height: 80px;
+	height: 70px;
 	width: 100%;
 	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 	opacity: 0.9;
 	z-index: 9;
 	.banner{
 		img{
-			height: 80px;
-			width: 80px;
+			height: 70px;
+			width: 70px;
 			margin: 0;
 		}
 		nav{
@@ -160,7 +140,7 @@ video {
 								}
 							}
 							> a{
-								padding: 10px 20px 10px 20px;
+								padding: 10px 10px 10px 10px;
 								line-height: 20px;
 								font-size: 15px;
 								display: inline-block;
@@ -168,9 +148,9 @@ video {
 						}
 					}
 					> a{
-						padding: 10px 20px 10px 20px;
-						line-height: 60px;
-						font-size: 25px;
+						padding: 10px 10px 10px 10px;
+						line-height: 50px;
+						font-size: 20px;
 						display: inline-block;
 					}
 				}
@@ -185,8 +165,8 @@ video {
 	position: relative;
 	box-shadow: 0px 2px 3px #000;
 	padding-bottom: 50px;
-	padding-top: 80px;
-	margin-top: -80px;
+	padding-top: 90px;
+	margin-top: -60px;
 	z-index: 0;
 
 	.slider{
@@ -198,8 +178,8 @@ video {
 		text-align: center;
 		img{
 			width: 100%;
-			max-width: 600px;
-			min-width: 400px;
+			max-width: 420px;
+			min-width: 300px;
 			border-radius: 0;
 		}
 		a{
@@ -215,11 +195,13 @@ video {
 			position: relative;
 			text-shadow: 1px 1px 3px #000;
 			vertical-align: middle;
-			height: 240px;
-			width: 240px;
+			height: 150px;
+			width: 150px;
 			border-radius: 50%;
 			box-shadow: 0px 3px 7px #111;
-			margin: 20px;
+			margin-top: -10px;
+			margin-right: 5px;
+			margin-left: 5px;
 			&:nth-child(1){
 				background-image: url('img/circle/circle1.jpg');
 				z-index: 2;
@@ -237,8 +219,8 @@ video {
 			&:hover{
 			}
 			a{
-				margin-top: 70px;
-				font-size: 30px;
+				margin-top: 40px;
+				font-size: 25px;
 				color: #fff;
 			}
 		}
@@ -269,7 +251,8 @@ video {
 		display: inline-block;
 		margin-top: 20px;
 		border: 0;
-		min-width:460px;
+		max-width:460px;
+		min-width: 400px;
 		width: 60%;
 		tr{
 			td{

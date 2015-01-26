@@ -4,7 +4,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="#">Events</a>
+					<a>Events</a>
 					<ul>
 						<li><a href="#">Day 1</a></li>
 						<li><a href="#">Day 2</a></li>
@@ -12,19 +12,19 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#">People</a>
+					<a>People</a>
 					<ul>
-						<li><a href="#">Moderators</a>
+						<li><a>Moderators</a>
 							<ul>
 								<li><a href="#">Person ONE</a></li>
 								<li><a href="#">Person TWO</a></li>
 							</ul></li>
-						<li><a href="#">Representatives</a>
+						<li><a>Representatives</a>
 							<ul>
 								<li><a href="#">Person ONE</a></li>
 								<li><a href="#">Person TWO</a></li>
 							</ul></li>
-						<li><a href="#">Co-ordinators</a>
+						<li><a>Co-ordinators</a>
 							<ul>
 								<li><a href="#">Person ONE</a></li>
 								<li><a href="#">Person TWO</a></li>
@@ -33,7 +33,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#">Tech Partners</a>
+					<a>Tech Partners</a>
 					<ul>
 						<li><a href="#">Mozilla</a></li>
 						<li><a href="#">Ubuntu India</a></li>

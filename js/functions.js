@@ -8,7 +8,10 @@ $(document).scroll(function(){
 	}
 	else{
 		$(".header").removeClass("stickToTop");
-		$(".body").css("margin-top","-80");
+		if(window.innerWidth<480)
+			$(".body").css("margin-top","-70");
+		else
+			$(".body").css("margin-top","-80");
 	}
 
 });

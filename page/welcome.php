@@ -14,27 +14,3 @@
 		</div>
 	</div>
 </div>
-<style>
-video { 
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	background: url('css/LoopVid/frame.jpg') no-repeat;
-	background-size: cover;
-	transition: 1s opacity;
-}
-#content	 {
-	background: rgba(0,0,0,0.3);
-}
-@media screen and (max-width: 500px) { 
-	div{width:70%;} 
-}
-@media screen and (max-device-width: 800px) {
-	html { background: url('css/LoopVid/frame.jpg') #000 no-repeat center center cover; }
-	#bgvid { display: none; }
-}
-</style>
