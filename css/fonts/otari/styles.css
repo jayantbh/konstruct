@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'otari';
+  src: 	url('Otari-Bold-Limited.eot?#iefix') format('embedded-opentype'),  
+  		url('Otari-Bold-Limited.otf')  format('opentype'),
+  		url('Otari-Bold-Limited.woff') format('woff'), 
+  		url('Otari-Bold-Limited.ttf')  format('truetype'), 
+  		url('Otari-Bold-Limited.svg#Otari-Bold-Limited') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

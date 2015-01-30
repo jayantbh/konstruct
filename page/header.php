@@ -1,6 +1,6 @@
 <div class="header centered">
 	<div class="banner">
-		<img src="css/img/Kbinary.png">
+		<img src="css/img/KbinaryCircle.png">
 		<nav>
 			<ul>
 				<li><a href="#">Blog</a>

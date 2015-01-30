@@ -3,6 +3,22 @@ $("#showlist").click(function(){
 });
 $(document).ready(function(){
 	$(".welcome").css("background-image","url('css/img/bgs/"+Math.floor((new Date).getHours()/2)+".jpg')");	
+	/*$(".page1 .sidebarData .leftTab").on("click",function(){
+		var leftPx;
+		var panel=$(this).parent(".sidebarData");
+		if(panel.css("left")!="0"){
+			leftPx=panel.css("left");
+			panel.animate({"left":"0"},400);
+		}
+		else
+			//pal.animate({"left":leftPx},400);
+			alert(panel.css("left"));
+	});*/
+   var i=0,j=0;
+   setInterval(function(){
+      $(".days .coms1").attr("src","css/img/coms/"+(i++%6)+".png");
+      $(".days .coms2").attr("src","css/img/coms/"+(6+(j++%5))+".png");
+   },500);
 });
 $(".body").onepage_scroll({
    sectionContainer: ".section",     // sectionContainer accepts any kind of selector in case you don't want to use section

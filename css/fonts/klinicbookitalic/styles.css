@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'KlinicSlab-BookItalic';
+  src: url('KlinicSlab-BookItalic.eot?#iefix') format('embedded-opentype'),  url('KlinicSlab-BookItalic.otf')  format('opentype'),
+	     url('KlinicSlab-BookItalic.woff') format('woff'), url('KlinicSlab-BookItalic.ttf')  format('truetype'), url('KlinicSlab-BookItalic.svg#KlinicSlab-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'CooperHewitt-Medium';
+  src: url('CooperHewitt-Medium.eot?#iefix') format('embedded-opentype'),  url('CooperHewitt-Medium.otf')  format('opentype'),
+	     url('CooperHewitt-Medium.woff') format('woff'), url('CooperHewitt-Medium.ttf')  format('truetype'), url('CooperHewitt-Medium.svg#CooperHewitt-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

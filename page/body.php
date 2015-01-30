@@ -5,7 +5,9 @@
 	<div class="section page2">
 		<?php require_once 'page/section2.php';?>
 	</div>
-	<div class="section page3"></div>
+	<div class="section page3">
+		<?php require_once 'page/section3.php';?>
+	</div>
 	<div class="section page4"></div>
 	<div class="section page5"></div>
 </div>

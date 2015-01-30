@@ -26,6 +26,19 @@
 	80%  {box-shadow: -30px 50px 0px 90px @blue1, -60px 70px 0px 120px @blue2, -60px -70px 0px 150px @blue, -140px -100px 0px 180px @deepblue;}
 	100% {box-shadow: 0px 0px 0px 90px @blue1, 0px 0px 0px 120px @blue2, 0px 0px 0px 150px @blue, 0px 0px 0px 180px @deepblue;}
 }
+@-webkit-keyframes spin{
+	0%   {transform: rotate(0deg);}
+	10%  {transform: rotate(90deg);}
+	20%  {transform: rotate(90deg);}
+	30%  {transform: rotate(-90deg);}
+	40%  {transform: rotate(-90deg);}
+	50%  {transform: rotate(180deg);}
+	60%  {transform: rotate(180deg);}
+	70%  {transform: rotate(270deg);}
+	80%  {transform: rotate(270deg);}
+	90%  {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
+}
 body{
 	text-align: center;
 	background-color: #222;
@@ -62,56 +75,76 @@ video {
 	background-position: center;
 	background-repeat: no-repeat;
 	.welcomeInfo{
-		width: 470px;
+		width: 600px;
 		height: 60%;
 		position: absolute;
-		top: 0;
+		top: 50;
 		left: 0;
 		right: 0;
-		bottom: 50;
 		margin: auto;
 		color: white;
-		h1,h2,h3{
+		h1,h2,h3,h4{
 			position: relative;
+			z-index: 2;
 			font-family: 'roboto_condensedregular';
-			z-index: 1;
+			text-shadow: 0px 0px 6px #000;
 		}
 		h1{
-			font-size: 3em;
+			font-size: 3.5em;
 		}
 		h2{
-			font-size: 2em;
+			font-size: 2.4em;
 			margin-top: 20px;
 		}
 		h3{
-			font-size: 1.5em;
+			font-size: 1.6em;
 		}
-		img{
-			height: 180px;
-			width: 180px;
+		h4{
+			font-size: 1.1em;
+		}
+		> img{
+			height: 170px;
+			width: 170px;
 			border-radius: 50%;
-			//-webkit-animation: bubbles 7s infinite ease-in-out;
+			-webkit-animation: bubbles 7s infinite ease-in-out,spin 5s infinite linear;
 		}
 		button{
+			position: relative;
+			z-index: 2;
 			margin-top: 10px;
-			padding: 10px;
+			padding: 8px;
 			border-radius: 5px;
 			background-color: darken(@blue, 20%);
 			border-width: 0;
 			box-shadow: 0px 5px 0px 0px darken(@blue, 40%),0px -2px 3px darken(@blue, 40%) inset;
-			font-size: 1.2em;
+			font-size: 1em;
 			color: white;
 			font-family: 'quicksandregular';
 			&:active{
 				margin-top: 13px;
+				margin-bottom: -3px;
 				box-shadow: 0px 2px 0px 0px darken(@blue, 40%),0px -2px 3px darken(@blue, 40%) inset;
+			}
+		}
+		.techPartners{
+			position: relative;
+			z-index: 2;
+			margin-top: 18px;
+			ul{
+				li{
+					display: inline-block;
+					img{
+						height: 40px;
+						width: auto;
+					}
+				}
 			}
 		}
 	}
 }
 
 .header{
-	position: relative;
+	position: fixed;
 	background-color: #111;
 	height: 80px;
 	width: 100%;
@@ -180,43 +213,16 @@ video {
 }
 .body{
 	color: #333;
+	height: 100%;
 	width: 100%;
 	background-color: white;
-	position: relative;
-	box-shadow: 0px 2px 3px #000;
-	padding-bottom: 50px;
-	padding-top: 80px;
-	margin-top: -80px;
-	z-index: 0;
-
-	.slider{
-		background-color: red;
-		width: 100%;
-	}
-	.banner{
-		display: inline-block;
-		text-align: center;
-		img{
-			width: 100%;
-			max-width: 600px;
-			min-width: 400px;
-			border-radius: 0;
-		}
-		a{
-			display: inline-block;
-			font-size: 80px;
-		}
-	}
-	.welcomeText{
-		font-size: 2em;
-	}
 	.days{
 		li{
 			position: relative;
 			text-shadow: 1px 1px 3px #000;
 			vertical-align: middle;
-			height: 240px;
-			width: 240px;
+			height: 300px;
+			width: 300px;
 			border-radius: 50%;
 			box-shadow: 0px 3px 7px #111;
 			margin: 20px;
@@ -237,31 +243,9 @@ video {
 			&:hover{
 			}
 			a{
-				margin-top: 70px;
-				font-size: 30px;
+				margin-top: 80px;
+				font-size: 40px;
 				color: #fff;
-			}
-		}
-	}
-	.flatmenu{
-		display: inline-block;
-		margin-top: 10px;
-		font-size: 1.4em;
-		a{
-			padding: 10px;
-			color: #555;
-			&:first-child{
-				font-family: 'quicksandregular';
-			}
-		}
-	}
-	.largemenu{
-		text-align: left;
-		display: block;
-		font-size: 2em;
-		a{
-			&:first-child{
-				font-size: 1.5em;
 			}
 		}
 	}
@@ -325,6 +309,221 @@ video {
 				background-image: url("img/tiles/8.jpg");
 			}
 		}
+	}
+	.page1{
+		background-image: url('img/section/town.jpg');
+		background-size: cover;
+		.animatedText{
+			text-align: center;
+			margin-top: 20px;
+			.letterbox{
+				width: 26px;
+				height: 3em;
+				overflow: hidden;
+				display: inline-block;
+				.letter{
+					height: 3em;
+					width: 52px;
+					margin-left: -27px;
+					&:hover{
+						margin-left: -2;
+					}
+				}
+				.lettervertical{
+					height: 6em;
+					width: 28px;
+					margin-top: -3em;
+					&:hover{
+						margin-top: 0;
+					}
+				}
+				.letterverticalinv{
+					height: 6em;
+					width: 26px;
+					margin-top: 0;
+					&:hover{
+						margin-top: -3em;
+					}
+				}
+				.letter, .lettervertical, .letterverticalinv{
+					display: inline-block;
+					overflow: hidden;
+					transition: all 0.2s;
+					a{
+						width: 26px;
+						display: inline-block;
+						text-shadow: 1px 2px 5px black;
+						font-size: 3em;
+						font-family: 'roboto_condensedbold';
+						font-weight: bolder;
+						&.one{
+							color: white;
+						}
+						&.two{
+							color: @blue;
+						}
+					}
+				}
+			}			
+		}
+		h2{
+			font-size: 2.5em;
+			margin-top: 40px;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+		}
+		h3{
+			font-size: 1.7em;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+		}
+		h4{
+			font-size: 1em;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+			&:before{
+				content: "Konstruct 2015 is touted to be Kolkata’s first ever Open Source Fest.\AThis fest will include a plethora of events to be held at \AWBUT (In-house) campus from 27th Feb to 1st Mar. \A \A Scroll down for more.";
+				white-space: pre;
+			}
+		}
+		> img{
+			margin-top: 0px;
+			height: 180px;
+			width: 180px;
+			-webkit-animation: 5s spin linear infinite;
+		}
+		.sidebarData{
+			text-align: center;
+			height: 70%;
+			width: 90%;
+			position: absolute;
+			left: -90%;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			background-color: red;
+			border-radius: 0px 5px 5px 0px;
+			background-color: rgba(40,40,40,0.9);
+			box-shadow: 0px 2px 2px #000;
+			z-index: 1;
+			transition: all 0.7s ease;
+			> .img{
+				display: inline-block;
+				margin-top: 20px;
+				height: 60px;
+				width: 60px;
+				padding: 10px;
+				border-radius: 50%;
+				background-color: #fff;
+				margin-bottom: -10px;
+				img{
+					height: 60px;
+					width: 60px;
+				}
+			}
+			h2{
+				color: white;
+				text-shadow: 1px 2px 5px black;
+				font-size: 2.4em;
+			}
+			h3{
+				font-size: 1.6em;
+				color: white;
+				text-shadow: 1px 2px 5px black;
+			}
+			> p{
+				color: #fff;
+				font-size: 1em;
+				display: inline-block;
+				padding: 20px;
+			}
+			&:hover{
+				left: 0;
+			}
+			.lefttab{
+				position: absolute;
+				height: 300px;
+				width: 40px;
+				background-color: rgba(40,40,40,0.9);
+				right: -40;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				border-radius: 0px 5px 5px 0px;
+				z-index: 0;
+				cursor: pointer;
+				a{
+					position: absolute;
+					left: -130px;
+					top: 18%;
+					display: inline-block;
+					color: white;
+					font-size: 1.5em;
+					-webkit-transform: rotate(-90deg);
+					width: 300px;
+					height: 40px;
+				}
+			}
+		}
+	}
+	.page2{
+		background-image: url('img/bgs/6.jpg');
+		h2{
+			margin-top: 50px;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+			font-size: 4em;
+		}
+		h3{
+			font-size: 2.5em;
+			margin-top: 40px;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+		}
+		.days{
+			text-align: center;
+			width: 100%;
+			height: 800px;
+			margin-top: 50px;
+			.day{
+				display: inline-block;
+				height: 400px;
+				width: 400px;
+				border-radius: 50%;
+				text-align: center;
+				box-shadow: 0px 2px 5px black;
+				a{
+					font-size: 3em;
+					color: #fff;
+					margin-top: 100px;
+					display: inline-block;
+					text-shadow: 1px 2px 5px black;
+				}
+				&:nth-child(1){
+					background-image: url('img/circle/circle1.jpg');
+				}
+				&:nth-child(2){
+					background-image: url('img/circle/circle2.jpg');
+				}
+				&:nth-child(3){
+					background-image: url('img/circle/circle3.jpg');
+				}
+			}
+		}
+	}
+	.page3{
+		background-image: url('img/bgs/7.jpg');
+
+	}
+	.page4{
+		background-image: url('img/bgs/8.jpg');
+	}
+	.page5{
+		background-image: url('img/bgs/9.jpg');
+	}
+	.section{
+		text-align: center;
+		padding-top: 80px;
 	}
 }
 

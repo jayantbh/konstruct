@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'FengardoNeue-Black';
+  src: url('FengardoNeue-Black.eot?#iefix') format('embedded-opentype'),  url('FengardoNeue-Black.otf')  format('opentype'),
+	     url('FengardoNeue-Black.woff') format('woff'), url('FengardoNeue-Black.ttf')  format('truetype'), url('FengardoNeue-Black.svg#FengardoNeue-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
