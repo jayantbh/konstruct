@@ -3,6 +3,12 @@
 		<img src="css/img/Kbinary.png">
 		<nav>
 			<ul>
+				<li><a href="#">Blog</a>
+					<ul>
+						<li><a href="#">Be Updated</a></li>
+						<li><a href="./">Homepage</a></li>
+					</ul>
+				</li>
 				<li>
 					<a>Events</a>
 					<ul>
@@ -36,8 +42,15 @@
 					<a>Tech Partners</a>
 					<ul>
 						<li><a href="#">Mozilla</a></li>
-						<li><a href="#">Ubuntu India</a></li>
+						<li><a href="#">Fedora</a></li>
+						<li><a href="#">Internshala</a></li>
+						<li><a href="#">NULL</a></li>
+						<li><a href="#">Wikipedia</a></li>
+						<li><a href="#">Linux Users Group</a></li>
 						<li><a href="#">Oracle</a></li>
+						<li><a href="#">Python</a></li>
+						<li><a href="#">Wipro</a></li>
+						<li><a href="#">Java Users Group</a></li>
 					</ul>
 				</li>
 			</ul>

@@ -26,6 +26,19 @@
 	80%  {box-shadow: -30px 50px 0px 90px @blue1, -60px 70px 0px 120px @blue2, -60px -70px 0px 150px @blue, -140px -100px 0px 180px @deepblue;}
 	100% {box-shadow: 0px 0px 0px 90px @blue1, 0px 0px 0px 120px @blue2, 0px 0px 0px 150px @blue, 0px 0px 0px 180px @deepblue;}
 }
+@-webkit-keyframes spin{
+	0%   {transform: rotate(0deg);}
+	10%  {transform: rotate(90deg);}
+	20%  {transform: rotate(90deg);}
+	30%  {transform: rotate(-90deg);}
+	40%  {transform: rotate(-90deg);}
+	50%  {transform: rotate(180deg);}
+	60%  {transform: rotate(180deg);}
+	70%  {transform: rotate(270deg);}
+	80%  {transform: rotate(270deg);}
+	90%  {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
+}
 body{
 	text-align: center;
 	background-color: #222;
@@ -62,19 +75,20 @@ video {
 	background-position: center;
 	background-repeat: no-repeat;
 	.welcomeInfo{
-		width: 470px;
+		width: 800px;
 		height: 60%;
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
-		bottom: 0;
+		bottom: 50;
 		margin: auto;
 		color: white;
-		h1,h2,h3{
+		h1,h2,h3,h4{
 			position: relative;
+			z-index: 2;
 			font-family: 'roboto_condensedregular';
-			z-index: 1;
+			text-shadow: 0px 0px 6px #000;
 		}
 		h1{
 			font-size: 4em;
@@ -86,13 +100,18 @@ video {
 		h3{
 			font-size: 2em;
 		}
-		img{
+		h4{
+			font-size: 1.5em;
+		}
+		> img{
 			height: 200px;
 			width: 200px;
 			border-radius: 50%;
-			//-webkit-animation: bubbles 7s infinite ease-in-out;
+			-webkit-animation: bubbles 7s infinite ease-in-out,spin 5s infinite linear;
 		}
 		button{
+			position: relative;
+			z-index: 2;
 			margin-top: 10px;
 			padding: 10px;
 			border-radius: 5px;
@@ -104,14 +123,29 @@ video {
 			font-family: 'quicksandregular';
 			&:active{
 				margin-top: 13px;
+				margin-bottom: -3px;
 				box-shadow: 0px 2px 0px 0px darken(@blue, 40%),0px -2px 3px darken(@blue, 40%) inset;
+			}
+		}
+		.techPartners{
+			position: relative;
+			z-index: 2;
+			margin-top: 30px;
+			ul{
+				li{
+					display: inline-block;
+					img{
+						height: 80px;
+						width: 80px;
+					}
+				}
 			}
 		}
 	}
 }
 
 .header{
-	position: relative;
+	position: fixed;
 	background-color: #111;
 	height: 80px;
 	width: 100%;
@@ -180,36 +214,9 @@ video {
 }
 .body{
 	color: #333;
+	height: 100%;
 	width: 100%;
 	background-color: white;
-	position: relative;
-	box-shadow: 0px 2px 3px #000;
-	padding-bottom: 50px;
-	padding-top: 80px;
-	margin-top: -80px;
-	z-index: 0;
-
-	.slider{
-		background-color: red;
-		width: 100%;
-	}
-	.banner{
-		display: inline-block;
-		text-align: center;
-		img{
-			width: 100%;
-			max-width: 600px;
-			min-width: 400px;
-			border-radius: 0;
-		}
-		a{
-			display: inline-block;
-			font-size: 80px;
-		}
-	}
-	.welcomeText{
-		font-size: 2em;
-	}
 	.days{
 		li{
 			position: relative;
@@ -240,28 +247,6 @@ video {
 				margin-top: 80px;
 				font-size: 40px;
 				color: #fff;
-			}
-		}
-	}
-	.flatmenu{
-		display: inline-block;
-		margin-top: 10px;
-		font-size: 1.4em;
-		a{
-			padding: 10px;
-			color: #555;
-			&:first-child{
-				font-family: 'quicksandregular';
-			}
-		}
-	}
-	.largemenu{
-		text-align: left;
-		display: block;
-		font-size: 2em;
-		a{
-			&:first-child{
-				font-size: 1.5em;
 			}
 		}
 	}
@@ -325,6 +310,90 @@ video {
 				background-image: url("img/tiles/8.jpg");
 			}
 		}
+	}
+	.page1{
+		background-image: url('img/bgs/5.jpg');
+		h1{
+			margin-top: 50px;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+			font-size: 4em;
+		}
+		h2{
+			font-size: 2.5em;
+			margin-top: 40px;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+		}
+		h3{
+			font-size: 1.7em;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+		}
+		img{
+			margin-top: 20px;
+			height: 300px;
+			width: 300px;
+			-webkit-animation: 5s spin linear infinite;
+		}
+	}
+	.page2{
+		background-image: url('img/bgs/6.jpg');
+		h2{
+			margin-top: 50px;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+			font-size: 4em;
+		}
+		h3{
+			font-size: 2.5em;
+			margin-top: 40px;
+			color: white;
+			text-shadow: 1px 2px 5px black;
+		}
+		.days{
+			text-align: center;
+			width: 100%;
+			height: 800px;
+			margin-top: 50px;
+			.day{
+				display: inline-block;
+				height: 400px;
+				width: 400px;
+				border-radius: 50%;
+				text-align: center;
+				box-shadow: 0px 2px 5px black;
+				a{
+					font-size: 3em;
+					color: #fff;
+					margin-top: 100px;
+					display: inline-block;
+					text-shadow: 1px 2px 5px black;
+				}
+				&:nth-child(1){
+					background-image: url('img/circle/circle1.jpg');
+				}
+				&:nth-child(2){
+					background-image: url('img/circle/circle2.jpg');
+				}
+				&:nth-child(3){
+					background-image: url('img/circle/circle3.jpg');
+				}
+			}
+		}
+	}
+	.page3{
+		background-image: url('img/bgs/7.jpg');
+	}
+	.page4{
+		background-image: url('img/bgs/8.jpg');
+	}
+	.page5{
+		background-image: url('img/bgs/9.jpg');
+	}
+	.section{
+		text-align: center;
+		padding-top: 80px;
 	}
 }
 

@@ -1,21 +1,11 @@
 <div class="body centered">
-	<ul class="days">
-		<li class="banner"><a>Day 1<br>Getting Started.</a></li>
-		<li class="banner"><a>Day 2<br>Open Source World.</a></li>
-		<li class="banner"><a>Day 3<br>All things FOSS.</a></li>
-	</ul>
-	<table>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
+	<div class="section page1">
+		<?php require_once 'page/section1.php';?>
+	</div>
+	<div class="section page2">
+		<?php require_once 'page/section2.php';?>
+	</div>
+	<div class="section page3"></div>
+	<div class="section page4"></div>
+	<div class="section page5"></div>
 </div>
