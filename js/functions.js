@@ -25,7 +25,7 @@ $(".body").onepage_scroll({
    easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
                                     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
    animationTime: 500,             // AnimationTime let you define how long each section takes to animate
-   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+   pagination: false,                // You can either show or hide the pagination. Toggle true for show, false for hide.
    updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
    beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
    afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
@@ -35,4 +35,15 @@ $(".body").onepage_scroll({
                                     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
                                     // the browser's width is less than 600, the fallback will kick in.
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+});
+$("#sap").submit(function(e){
+   e.preventDefault();
+   var name=$(this).find("#name").val();
+   var mail=$(this).find("#mail").val();
+   var num=$(this).find("#num").val();
+   var insti=$(this).find("#insti").val();
+   var app=$(this).find("#app").val();
+   var rate=$(this).find("#rate").val();
+   var why=$(this).find("#why").val();
+   alert("Under dev.\nYou entered:\nName: "+name+"\nMail: "+mail+"\nNumber: "+num+"\nInsti: "+insti+"\nFav OSS: "+app+"\nRating: "+rate+"\nWhy Kons.: "+why);
 });

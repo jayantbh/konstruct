@@ -39,6 +39,11 @@
 	90%  {transform: rotate(0deg);}
 	100% {transform: rotate(0deg);}
 }
+@-webkit-keyframes shake{
+	0%    {-webkit-transform: rotateZ(-30deg);}
+	50%   {-webkit-transform: rotateZ(-210deg);}
+	100%  {-webkit-transform: rotateZ(-390deg);}
+}
 body{
 	text-align: center;
 	background-color: #222;
@@ -75,12 +80,13 @@ video {
 	background-position: center;
 	background-repeat: no-repeat;
 	.welcomeInfo{
-		width: 600px;
+		width: 800px;
 		height: 60%;
 		position: absolute;
-		top: 50;
+		top: 0;
 		left: 0;
 		right: 0;
+		bottom: 50;
 		margin: auto;
 		color: white;
 		h1,h2,h3,h4{
@@ -90,21 +96,21 @@ video {
 			text-shadow: 0px 0px 6px #000;
 		}
 		h1{
-			font-size: 3.5em;
+			font-size: 4em;
 		}
 		h2{
-			font-size: 2.4em;
+			font-size: 3em;
 			margin-top: 20px;
 		}
 		h3{
-			font-size: 1.6em;
+			font-size: 2em;
 		}
 		h4{
-			font-size: 1.1em;
+			font-size: 1.5em;
 		}
 		> img{
-			height: 170px;
-			width: 170px;
+			height: 200px;
+			width: 200px;
 			border-radius: 50%;
 			-webkit-animation: bubbles 7s infinite ease-in-out,spin 5s infinite linear;
 		}
@@ -112,12 +118,12 @@ video {
 			position: relative;
 			z-index: 2;
 			margin-top: 10px;
-			padding: 8px;
+			padding: 10px;
 			border-radius: 5px;
 			background-color: darken(@blue, 20%);
 			border-width: 0;
 			box-shadow: 0px 5px 0px 0px darken(@blue, 40%),0px -2px 3px darken(@blue, 40%) inset;
-			font-size: 1em;
+			font-size: 1.2em;
 			color: white;
 			font-family: 'quicksandregular';
 			&:active{
@@ -129,12 +135,12 @@ video {
 		.techPartners{
 			position: relative;
 			z-index: 2;
-			margin-top: 18px;
+			margin-top: 30px;
 			ul{
 				li{
 					display: inline-block;
 					img{
-						height: 40px;
+						height: 80px;
 						width: auto;
 					}
 				}
@@ -142,22 +148,23 @@ video {
 		}
 	}
 }
-
 .header{
 	position: fixed;
-	background-color: #111;
-	height: 80px;
+	background-image: url('img/elements/menu.png');
+	height: 180px;
+	margin-top: -40px;
 	width: 100%;
-	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 	opacity: 0.9;
 	z-index: 9;
 	.banner{
+		margin-top: 50px;
 		img{
 			height: 80px;
 			width: 80px;
 			margin: 0;
 		}
 		nav{
+			margin-top: -10px;
 			a{
 				color: white;
 			}
@@ -165,7 +172,6 @@ video {
 			display: block;
 			ul{// LEVEL 1
 				list-style-type: none;
-				background-color: #111;
 				li{// LEVEL 1
 					display: inline-block;
 					margin: 0;
@@ -216,39 +222,6 @@ video {
 	height: 100%;
 	width: 100%;
 	background-color: white;
-	.days{
-		li{
-			position: relative;
-			text-shadow: 1px 1px 3px #000;
-			vertical-align: middle;
-			height: 300px;
-			width: 300px;
-			border-radius: 50%;
-			box-shadow: 0px 3px 7px #111;
-			margin: 20px;
-			&:nth-child(1){
-				background-image: url('img/circle/circle1.jpg');
-				z-index: 2;
-			}
-			&:nth-child(2){
-				background-image: url('img/circle/circle2.jpg');
-				z-index: 1;	
-			}
-			&:nth-child(3){
-				background-image: url('img/circle/circle3.jpg');
-			}
-			background-size: cover;
-			transition: 0.2s all;
-			cursor: pointer;
-			&:hover{
-			}
-			a{
-				margin-top: 80px;
-				font-size: 40px;
-				color: #fff;
-			}
-		}
-	}
 	table{
 		display: inline-block;
 		margin-top: 20px;
@@ -315,34 +288,34 @@ video {
 		background-size: cover;
 		.animatedText{
 			text-align: center;
-			margin-top: 20px;
+			margin-top: 50px;
 			.letterbox{
-				width: 26px;
-				height: 3em;
+				width: 37px;
+				height: 4em;
 				overflow: hidden;
 				display: inline-block;
 				.letter{
-					height: 3em;
-					width: 52px;
-					margin-left: -27px;
+					height: 4em;
+					width: 74px;
+					margin-left: -37px;
 					&:hover{
-						margin-left: -2;
+						margin-left: 0;
 					}
 				}
 				.lettervertical{
-					height: 6em;
-					width: 28px;
-					margin-top: -3em;
+					height: 8em;
+					width: 37px;
+					margin-top: -4em;
 					&:hover{
 						margin-top: 0;
 					}
 				}
 				.letterverticalinv{
-					height: 6em;
-					width: 26px;
+					height: 8em;
+					width: 37px;
 					margin-top: 0;
 					&:hover{
-						margin-top: -3em;
+						margin-top: -4em;
 					}
 				}
 				.letter, .lettervertical, .letterverticalinv{
@@ -350,10 +323,10 @@ video {
 					overflow: hidden;
 					transition: all 0.2s;
 					a{
-						width: 26px;
+						width: 37px;
 						display: inline-block;
 						text-shadow: 1px 2px 5px black;
-						font-size: 3em;
+						font-size: 4em;
 						font-family: 'roboto_condensedbold';
 						font-weight: bolder;
 						&.one{
@@ -378,21 +351,17 @@ video {
 			text-shadow: 1px 2px 5px black;
 		}
 		h4{
-			font-size: 1em;
+			font-size: 1.4em;
 			color: white;
-			text-shadow: 1px 2px 5px black;
-			&:before{
-				content: "Konstruct 2015 is touted to be Kolkata’s first ever Open Source Fest.\AThis fest will include a plethora of events to be held at \AWBUT (In-house) campus from 27th Feb to 1st Mar. \A \A Scroll down for more.";
-				white-space: pre;
-			}
+			text-shadow: 1px 2px 5px black;			
 		}
 		> img{
-			margin-top: 0px;
-			height: 180px;
-			width: 180px;
+			margin-top: 20px;
+			height: 300px;
+			width: 300px;
 			-webkit-animation: 5s spin linear infinite;
 		}
-		.sidebarData{
+		.sidebarLeftData{
 			text-align: center;
 			height: 70%;
 			width: 90%;
@@ -401,7 +370,6 @@ video {
 			top: 0;
 			bottom: 0;
 			margin: auto;
-			background-color: red;
 			border-radius: 0px 5px 5px 0px;
 			background-color: rgba(40,40,40,0.9);
 			box-shadow: 0px 2px 2px #000;
@@ -410,30 +378,20 @@ video {
 			> .img{
 				display: inline-block;
 				margin-top: 20px;
-				height: 60px;
-				width: 60px;
-				padding: 10px;
+				height: 100px;
+				width: 100px;
+				padding: 15px;
 				border-radius: 50%;
 				background-color: #fff;
-				margin-bottom: -10px;
+				margin-bottom: -30px;
 				img{
-					height: 60px;
-					width: 60px;
+					height: 100px;
+					width: 100px;
 				}
-			}
-			h2{
-				color: white;
-				text-shadow: 1px 2px 5px black;
-				font-size: 2.4em;
-			}
-			h3{
-				font-size: 1.6em;
-				color: white;
-				text-shadow: 1px 2px 5px black;
 			}
 			> p{
 				color: #fff;
-				font-size: 1em;
+				font-size: 1.2em;
 				display: inline-block;
 				padding: 20px;
 			}
@@ -465,18 +423,81 @@ video {
 				}
 			}
 		}
+		.sidebarRightData{
+			text-align: center;
+			height: 70%;
+			width: 90%;
+			position: absolute;
+			right: -90%;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 5px 0px 0px 5px;
+			background-color: rgba(40,40,40,0.9);
+			box-shadow: 0px 2px 2px #000;
+			z-index: 1;
+			transition: all 0.7s ease;
+			> .img{
+				display: inline-block;
+				margin-top: 20px;
+				height: 100px;
+				width: 100px;
+				padding: 15px;
+				border-radius: 50%;
+				background-color: #fff;
+				margin-bottom: -30px;
+				img{
+					height: 100px;
+					width: 100px;
+				}
+			}
+			> p{
+				color: #fff;
+				font-size: 1.2em;
+				display: inline-block;
+				padding: 20px;
+			}
+			&:hover{
+				right: 0;
+			}
+			.righttab{
+				position: absolute;
+				height: 300px;
+				width: 40px;
+				background-color: rgba(40,40,40,0.9);
+				left: -40;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				border-radius: 5px 0px 0px 5px;
+				z-index: 0;
+				cursor: pointer;
+				a{
+					position: absolute;
+					left: -130px;
+					top: 26%;
+					display: inline-block;
+					color: white;
+					font-size: 1.5em;
+					-webkit-transform: rotate(-90deg);
+					width: 300px;
+					height: 40px;
+				}
+			}
+		}
 	}
 	.page2{
-		background-image: url('img/bgs/6.jpg');
+		background-image: url('img/section/victoriadark.jpg');
+		background-size: cover;
 		h2{
-			margin-top: 50px;
+			margin-top: 40px;
 			color: white;
 			text-shadow: 1px 2px 5px black;
 			font-size: 4em;
 		}
 		h3{
-			font-size: 2.5em;
-			margin-top: 40px;
+			font-size: 2em;
+			margin-top: 60px;
 			color: white;
 			text-shadow: 1px 2px 5px black;
 		}
@@ -484,16 +505,17 @@ video {
 			text-align: center;
 			width: 100%;
 			height: 800px;
-			margin-top: 50px;
+			margin-top: 60px;
 			.day{
 				display: inline-block;
-				height: 400px;
-				width: 400px;
-				border-radius: 50%;
+				height: 300px;
+				width: 300px;
+				border-radius: 3px;
+				-webkit-transform: rotateZ(-30deg);
 				text-align: center;
 				box-shadow: 0px 2px 5px black;
 				a{
-					font-size: 3em;
+					font-size: 2em;
 					color: #fff;
 					margin-top: 100px;
 					display: inline-block;
@@ -510,9 +532,19 @@ video {
 				}
 			}
 		}
+		.comcontainer{
+			width: 248px;
+			text-align: center;
+			display: inline-block;
+		}
+		img{
+			display: inline-block;
+			height: 120px;
+		}
 	}
 	.page3{
-		background-image: url('img/bgs/7.jpg');
+		background-image: url('img/section/wall2.jpg');
+		background-size: cover;
 
 	}
 	.page4{

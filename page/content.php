@@ -2,7 +2,7 @@
 	<div class="welcomeInfo">
 		<h1>Konstruct Fest</h1>
 		<img src="css/img/Kbinary.png">
-		<h2>Welcome to Konstruct 2015</h2>
+		<h2>Welcome to Konstruct 2015 - CURRENTLY FOR SCREENS OVER 1400p ONLY</h2>
 		<h3>Kolkata's First Open Source Fest.</h3>
 		<a href="mainsite.php"><button id="scroll">See what's happening!</button></a>
 		<div class="techPartners">
@@ -15,6 +15,8 @@
 				<li><img src="css/img/feat/internshala.jpg"></li>
 				<li><img src="css/img/feat/java.svg"></li>
 				<li><img src="css/img/feat/linux.png"></li>
+				<li><img src="css/img/feat/oracle.png"></li>
+				<li><img src="css/img/feat/wipro.png"></li>
 			</ul><br>
 			<h4>Media Partners:</h4><br>
 			<ul>
