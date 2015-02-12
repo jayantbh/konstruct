@@ -265,6 +265,9 @@ button{
 		}
 		nav{
 			margin-top: 20px;
+			position: absolute;
+			right: 0;
+			top: 25;
 			a{
 				color: white;
 			}
@@ -307,7 +310,7 @@ button{
 						}
 					}
 					> a{//LEVEL 1
-						padding: 5px 10px 5px 10px;
+						padding: 5px 3px 5px 3px;
 						line-height: 30px;
 						font-size: 20px;
 						display: inline-block;
@@ -326,6 +329,7 @@ button{
 		background-image: url('img/section/town.jpg');
 		background-size: cover;
 		.animatedText{
+			width: 100%;
 			text-align: center;
 			margin-top: 30px;
 			.letterbox{
@@ -378,6 +382,10 @@ button{
 				}
 			}			
 		}
+		h2,h3,h4{
+			width: 80%;
+			margin-left: 10%;
+		}
 		h2{
 			font-size: 2.2em;
 			margin-top: 20px;
@@ -385,7 +393,7 @@ button{
 			text-shadow: 1px 2px 5px black;
 		}
 		h3{
-			font-size: 1.6em;
+			font-size: 1.3em;
 			color: white;
 			text-shadow: 1px 2px 5px black;
 		}
@@ -401,47 +409,14 @@ button{
 			-webkit-animation: 5s spin linear infinite;
 		}
 		.sidebarLeftData{
-			text-align: center;
-			height: 70%;
-			width: 90%;
-			position: absolute;
-			left: -90%;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-			border-radius: 0px 5px 5px 0px;
-			background-color: rgba(40,40,40,0.9);
+			left: -75%;
 			box-shadow: 0px 2px 2px #000;
-			z-index: 1;
+			border-radius: 0px 5px 5px 0px;
 			transition: all 0.7s ease;
-			> .img{
-				display: inline-block;
-				margin-top: 10px;
-				height: 70px;
-				width: 70px;
-				padding: 15px;
-				border-radius: 50%;
-				background-color: #fff;
-				margin-bottom: -20px;
-				img{
-					height: 70px;
-					width: 70px;
-				}
-			}
-			> p{
-				color: #fff;
-				font-size: 1em;
-				display: inline-block;
-				padding: 20px;
-			}
 			&:hover{
 				left: 0;
 			}
 			.lefttab{
-				position: absolute;
-				height: 300px;
-				width: 40px;
-				background-color: rgba(40,40,40,0.9);
 				right: -40;
 				top: 0;
 				bottom: 0;
@@ -463,47 +438,14 @@ button{
 			}
 		}
 		.sidebarRightData{
-			text-align: center;
-			height: 70%;
-			width: 90%;
-			position: absolute;
-			right: -90%;
-			top: 0;
-			bottom: 0;
-			margin: auto;
+			right: -75%;
 			border-radius: 5px 0px 0px 5px;
-			background-color: rgba(40,40,40,0.9);
 			box-shadow: 0px 2px 2px #000;
-			z-index: 1;
 			transition: all 0.7s ease;
-			> .img{
-				display: inline-block;
-				margin-top: 10px;
-				height: 70px;
-				width: 70px;
-				padding: 15px;
-				border-radius: 50%;
-				background-color: #fff;
-				margin-bottom: -20px;
-				img{
-					height: 70px;
-					width: 70px;
-				}
-			}
-			> p{
-				color: #fff;
-				font-size: 1em;
-				display: inline-block;
-				padding: 20px;
-			}
 			&:hover{
 				right: 0;
 			}
 			.righttab{
-				position: absolute;
-				height: 300px;
-				width: 40px;
-				background-color: rgba(40,40,40,0.9);
 				left: -40;
 				top: 0;
 				bottom: 0;
@@ -522,6 +464,48 @@ button{
 					width: 300px;
 					height: 40px;
 				}
+			}
+		}
+		.sidebarRightData,.sidebarLeftData{
+			text-align: center;
+			height: 70%;
+			width: 75%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			z-index: 1;
+			background-color: rgba(40,40,40,0.9);
+			h2{
+				font-size: 1.8em;
+				width: 90%;
+				margin-left: 5%;
+			}
+			> .img{
+				display: inline-block;
+				margin-top: 10px;
+				height: 50px;
+				width: 50px;
+				padding: 5px;
+				border-radius: 50%;
+				background-color: #fff;
+				margin-bottom: -20px;
+				img{
+					height: 50px;
+					width: 50px;
+				}
+			}
+			> p{
+				color: #fff;
+				font-size: 1em;
+				display: inline-block;
+				padding: 5px;
+			}
+			.righttab,.lefttab{
+				position: absolute;
+				height: 300px;
+				width: 40px;
+				background-color: rgba(40,40,40,0.9);
 			}
 		}
 	}
@@ -740,7 +724,6 @@ button{
 	.section{
 		text-align: center;
 		padding-top: 80px;
-		overflow: auto;
 	}
 }
 

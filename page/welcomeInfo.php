@@ -1,5 +1,5 @@
 <h1>Konstruct Fest</h1>
-<a style="color: white; position: relative; z-index:2; top: -20px; text-decoration: none;">in association with <img src="css/img/feat/you.jpeg" height="40"></a><br>
+<a style="color: white; position: relative; z-index:2; top: -20px; text-decoration: none;">in association with <img src="css/img/feat/you.jpg" height="40"></a><br>
 <img src="css/img/Kbinary.png">
 <h2>Welcome to Konstruct</h2>
 <h3>Kolkata's First Open Source Fest <a href="invitation.php" title="Request your Invitation.">(Invite Only*)</a></h3>
@@ -20,7 +20,7 @@
 	</ul>
 	<h4>Media Partners:</h4><br>
 	<ul>
-		<li><img src="css/img/feat/you.jpeg"></li>
+		<li><img src="css/img/feat/tt.jpeg"></li>
 		<li><img src="css/img/feat/friendsfm.jpg"></li>
 	</ul>
 </div>
