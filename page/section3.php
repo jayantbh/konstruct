@@ -1,23 +1,23 @@
 <h2>Konstruct Campus Ambassador Program</h2>
-<h3>Want to be a cog in the Open Source machine?</h3>
+<h3>Want to be a cog in the Open Source machine? <a href="campusambassador.php">Learn More.</a></h3>
 <h4>Now is your chance to be a part of the finest in Kolkata!</h4>
 <p>Konstruct is home to some of the greatest Open Source Software and Security groups, companies and individuals. To be a part of it, all you have to do is fill the form below.</p>
 <form id="sap" class="contactForm">
 	<table>
 		<tr>
-			<td>Name*:</td>
+			<td>Your Full Name*:</td>
 			<td><input id="name" name="name" required></td>
 		</tr>
 		<tr>
-			<td>Email ID*:</td>
+			<td>Your Email ID*:</td>
 			<td><input id="mail" name="mail" required></td>
 		</tr>
 		<tr>
-			<td>Phone Number*:</td>
+			<td>Your Phone Number*:</td>
 			<td><input id="num" name="num" required></td>
 		</tr>
 		<tr>
-			<td>Instituition:</td>
+			<td>Instituition (School/College):</td>
 			<td><input id="insti" name="insti"></td>
 		</tr>
 		<tr>
@@ -33,5 +33,5 @@
 			<td><textarea id="why" name="why" placeholder="Tell us why." required></textarea></td>
 		</tr>
 	</table>
-	<button>I'm ready!</button>
+	<button class="submitter">I'm ready!</button>
 </form>

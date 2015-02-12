@@ -1,8 +1,8 @@
 <div class="animatedText"><div class="letterbox"><div class="lettervertical"><a class="one a1">K</a><a class="two b1">K</a></div></div><div class="letterbox"><div class="letter"><a class="one a2">O</a><a class="two b2">O</a></div></div><div class="letterbox"><div class="letter"><a class="one a3">N</a><a class="two b3">N</a></div></div><div class="letterbox"><div class="letterverticalinv"><a class="one a4">S</a><a class="two b4">S</a></div></div><div class="letterbox"><div class="letter"><a class="one a5">T</a><a class="two b5">T</a></div></div><div class="letterbox"><div class="letter"><a class="one a6">R</a><a class="two b6">R</a></div></div><div class="letterbox"><div class="letterverticalinv"><a class="one a7">U</a><a class="two b7">U</a></div></div><div class="letterbox"><div class="letter"><a class="one a8">C</a><a class="two b8">C</a></div></div><div class="letterbox"><div class="lettervertical"><a class="one a9">T</a><a class="two b9">T</a></div></div> <div class="letterbox"><div class="letter"><a class="one a10">2</a><a class="two b10">2</a></div></div><div class="letterbox"><div class="letter"><a class="one a11">0</a><a class="two b11">0</a></div></div><div class="letterbox"><div class="letterverticalinv"><a class="one a12">1</a><a class="two b12">1</a></div></div><div class="letterbox"><div class="lettervertical"><a class="one a13">5</a><a class="two b13">5</a></div></div></div>
 <img src="css/img/KbinaryCircle.png">
-<h2>Welcome to Konstruct - CURRENTLY FOR SCREENS OVER 1400p ONLY</h2>
+<h2>Welcome to Konstruct</h2>
 <h3>Kolkata's First Open Source Fest.<br>Presented by West Bengal University of Technology</h3>
-<h4>27th Feb to 1st March</h4>
+<h4>27th Feb to 1st March<br>Scroll down for more...</h4>
 <div class="sidebarLeftData">
 	<div class="img"><img src="css/img/section/wbut.png"></div>
 	<h2>West Bengal University of Technology</h2>

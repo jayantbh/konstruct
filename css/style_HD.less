@@ -1,6 +1,7 @@
 @blue: #33b5e5;
 @deepblue: #0099cc;
 @darkblue: darken(@deepblue, 10%);
+@lightblue: lighten(@deepblue, 20%);
 @yellow: #ffbb33;
 @deepgreen: #669900;
 @green1: #6BDB55;
@@ -63,6 +64,24 @@ video {
 	background-size: cover;
 	transition: 1s opacity;
 }
+button{
+	position: relative;
+	z-index: 2;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: darken(@blue, 20%);
+	border-width: 0;
+	box-shadow: 0px 5px 0px 0px darken(@blue, 40%),0px -2px 3px darken(@blue, 40%) inset;
+	font-size: 1.2em;
+	color: white;
+	font-family: 'quicksandregular';
+	&:active{
+		margin-top: 13px;
+		margin-bottom: -3px;
+		box-shadow: 0px 2px 0px 0px darken(@blue, 40%),0px -2px 3px darken(@blue, 40%) inset;
+	}
+}
 #content	 {
 	background: rgba(0,0,0,0.3);
 }
@@ -70,8 +89,15 @@ video {
 	div{width:70%;} 
 }
 @media screen and (max-device-width: 800px) {
-	html { background: url('css/LoopVid/frame.jpg') #000 no-repeat center center cover; }
+	html { background: url('LoopVid/frame.jpg') #000 no-repeat center center cover; }
 	#bgvid { display: none; }
+}
+.cover{
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 99;
 }
 .welcome{
 	height: 100%;
@@ -79,6 +105,57 @@ video {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	.cover{
+		position: relative;
+		z-index: 10;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		.shutter{
+			position: absolute;
+			margin: auto;
+			height: 100%;
+			width: 100%;
+			background-image: url('img/welcome/wood3.jpg');
+			background-size: cover;
+			> button{
+				display: inline-block;
+				top: 400px;
+				color: white;
+				font-size: 1.2em;
+			}
+			h1{
+				display: inline-block;
+				font-size: 4em;
+				margin-top: 200px;
+				color: #fff;
+				font-weight: bolder;
+				text-shadow: 1px 2px 3px #000;
+				margin-bottom: -500px;
+			}
+			form{
+				height: 150px;
+				width: 210px;
+				input{
+					height: 40px;
+					width: 200px;
+					margin: 5px;
+					font-size: 15px;
+					font-weight: bolder;
+				}
+				button{
+					height: 40px;
+					margin: 5px;
+					color: #fff;
+				}
+				position: absolute;
+				bottom: 100;
+				right: 0;
+				left: 0;
+				margin: auto;
+			}
+		}
+	}
 	.welcomeInfo{
 		width: 800px;
 		height: 60%;
@@ -86,31 +163,49 @@ video {
 		top: 0;
 		left: 0;
 		right: 0;
-		bottom: 50;
 		margin: auto;
 		color: white;
+		text-align: center;
 		h1,h2,h3,h4{
 			position: relative;
 			z-index: 2;
-			font-family: 'roboto_condensedregular';
+			font-family: 'roman';
 			text-shadow: 0px 0px 6px #000;
 		}
 		h1{
 			font-size: 4em;
 		}
 		h2{
-			font-size: 3em;
-			margin-top: 20px;
+			font-size: 2.8em;
 		}
 		h3{
-			font-size: 2em;
+			font-size: 1.8em;
+			margin-top: -10px;
+			a{
+				color: #7EA3F2;
+			}
+		}
+		.container{
+			width: 40%;
+			height: 50px;
+			margin-top: 20px;
+			margin-bottom: -30px;
+			display: inline-block;
+			clear: both;
+			.val{
+				font-size: 0.8em;
+				margin-top: 60%;
+			}
+			.type-time{
+				display: none;
+			}
 		}
 		h4{
-			font-size: 1.5em;
+			font-size: 1.3em;
 		}
 		> img{
-			height: 200px;
-			width: 200px;
+			height: 180px;
+			width: 180px;
 			border-radius: 50%;
 			-webkit-animation: bubbles 7s infinite ease-in-out,spin 5s infinite linear;
 		}
@@ -140,8 +235,9 @@ video {
 				li{
 					display: inline-block;
 					img{
-						height: 80px;
+						height: 50px;
 						width: auto;
+						margin-top: -20px;
 					}
 				}
 			}
@@ -152,19 +248,23 @@ video {
 	position: fixed;
 	background-image: url('img/elements/menu.png');
 	height: 180px;
-	margin-top: -40px;
+	margin-top: -50px;
 	width: 100%;
 	opacity: 0.9;
 	z-index: 9;
 	.banner{
-		margin-top: 50px;
-		img{
-			height: 80px;
-			width: 80px;
+		margin-top: 60px;
+		.img{
+			height: 70px;
+			width: 70px;
 			margin: 0;
+			margin-left: 10px;
+			display: inline-block;
+			background-image: url('img/KbinaryCircle.png');
+			background-size: cover;
 		}
 		nav{
-			margin-top: -10px;
+			margin-top: -20px;
 			a{
 				color: white;
 			}
@@ -198,7 +298,7 @@ video {
 									display: block;
 								}
 							}
-							> a{
+							> a{//LEVEL 2
 								padding: 10px 20px 10px 20px;
 								line-height: 20px;
 								font-size: 15px;
@@ -229,12 +329,12 @@ video {
 			text-align: center;
 			margin-top: 60px;
 			.letterbox{
-				width: 37px;
-				height: 4em;
+				width: 31px;
+				height: 3.5em;
 				overflow: hidden;
 				display: inline-block;
 				.letter{
-					height: 4em;
+					height: 3.5em;
 					width: 74px;
 					margin-left: -37px;
 					&:hover{
@@ -244,7 +344,7 @@ video {
 				.lettervertical{
 					height: 8em;
 					width: 37px;
-					margin-top: -4em;
+					margin-top: -3.5em;
 					&:hover{
 						margin-top: 0;
 					}
@@ -254,7 +354,7 @@ video {
 					width: 37px;
 					margin-top: 0;
 					&:hover{
-						margin-top: -4em;
+						margin-top: -3.5em;
 					}
 				}
 				.letter, .lettervertical, .letterverticalinv{
@@ -265,7 +365,7 @@ video {
 						width: 37px;
 						display: inline-block;
 						text-shadow: 1px 2px 5px black;
-						font-size: 4em;
+						font-size: 3.5em;
 						font-family: 'roboto_condensedbold';
 						font-weight: bolder;
 						&.one{
@@ -280,7 +380,7 @@ video {
 		}
 		h2{
 			font-size: 2.5em;
-			margin-top: 40px;
+			margin-top: 20px;
 			color: white;
 			text-shadow: 1px 2px 5px black;
 		}
@@ -295,9 +395,9 @@ video {
 			text-shadow: 1px 2px 5px black;			
 		}
 		> img{
-			margin-top: 20px;
-			height: 300px;
-			width: 300px;
+			margin-top: 10px;
+			height: 250px;
+			width: 250px;
 			-webkit-animation: 5s spin linear infinite;
 		}
 		.sidebarLeftData{
@@ -330,7 +430,7 @@ video {
 			}
 			> p{
 				color: #fff;
-				font-size: 1.2em;
+				font-size: 1em;
 				display: inline-block;
 				padding: 20px;
 			}
@@ -392,7 +492,7 @@ video {
 			}
 			> p{
 				color: #fff;
-				font-size: 1.2em;
+				font-size: 1em;
 				display: inline-block;
 				padding: 20px;
 			}
@@ -430,14 +530,14 @@ video {
 		background-image: url('img/section/victoriadark.jpg');
 		background-size: cover;
 		h2{
-			margin-top: 50px;
+			margin-top: 20px;
 			color: white;
 			text-shadow: 1px 2px 5px black;
 			font-size: 4em;
 		}
 		h3{
 			font-size: 2em;
-			margin-top: 60px;
+			margin-top: 50px;
 			color: white;
 			text-shadow: 1px 2px 5px black;
 		}
@@ -446,19 +546,23 @@ video {
 			text-align: center;
 			width: 100%;
 			height: 800px;
-			margin-top: 60px;
+			margin-top: 50px;
 			.day{
 				display: inline-block;
-				height: 300px;
-				width: 300px;
+				height: 220px;
+				width: 220px;
 				border-radius: 3px;
-				-webkit-transform: rotateZ(-30deg);
+				transform: rotateZ(-30deg);
 				text-align: center;
 				box-shadow: 0px 2px 5px black;
+				transition: all 0.2s;
+				&:hover{
+					transform: rotateZ(0deg);
+				}
 				a{
-					font-size: 2em;
+					font-size: 1.5em;
 					color: #fff;
-					margin-top: 100px;
+					margin-top: 65px;
 					display: inline-block;
 					text-shadow: 1px 2px 5px black;
 				}
@@ -475,13 +579,13 @@ video {
 		}
 		.comcontainer{
 			font-family: 'otari';
-			width: 248px;
+			width: 288px;
 			text-align: center;
 			display: inline-block;
 		}
 		img{
 			display: inline-block;
-			height: 120px;
+			height: 90px;
 		}
 	}
 	.page3{
@@ -491,8 +595,8 @@ video {
 		text-shadow: 1px 2px 5px black;
 		color: #fff;
 		h2{
-			margin-top: 50px;
-			font-size: 4em;
+			margin-top: 30px;
+			font-size: 3.2em;
 		}
 		h3{
 			font-size: 2em;
@@ -504,9 +608,12 @@ video {
 		p{
 			font-size: 1.2em;
 		}
+		a{
+			color: @lightblue;
+		}
 		.contactForm{
 			display: inline-block;
-			margin-top: 70px;
+			margin-top: 10px;
 			table{
 				tr{
 					color: #fff;
@@ -516,6 +623,18 @@ video {
 						padding: 5px;
 						input,textarea{
 							width: 200px;
+							border-radius: 5px;
+							border-width: 0;
+							box-shadow: 0px 2px 2px @darkblue inset;
+							background-color: lighten( @lightblue, 50%);
+							height: 100%;
+							text-align: center;
+							max-width: 200px;
+							max-height: 200px;
+							&[type=range]{
+								background-color: transparent;
+								box-shadow: none;
+							}
 						}
 					}
 				}
@@ -527,14 +646,273 @@ video {
 
 	}
 	.page4{
-		background-image: url('img/bgs/8.jpg');
+		background-image: url('img/section/road.jpg');
+		background-size: cover;
+		font-family: 'neue';
+		text-shadow: 1px 2px 5px black;
+		color: #fff;
+		h2{
+			margin-top: 35px;
+			font-size: 3.2em;
+			font-family: 'neueblack';
+		}
+		h3{
+			font-size: 2em;
+			margin-bottom: -30px;
+		}
+		h4{
+			font-size: 1.7em;
+			color: white;
+		}
+		p{
+			font-size: 1.5em;
+		}
+		ul{
+			margin-bottom: -20px;
+		}
+		li{
+			font-size: 1.3em;
+		}
 	}
 	.page5{
-		background-image: url('img/bgs/9.jpg');
+		background-image: url('img/section/whitewall.jpg');
+		background-size: cover;
+		text-shadow: 1px 2px 5px black;
+		color: #000;
+		font-family: 'klinicbook';
+		h2{
+			margin-top: 50px;
+			font-size: 4em;
+			font-family: 'roman';
+		}
+		h3{
+			font-size: 2em;
+		}
+		h4{
+			font-size: 1.7em;
+			color: white;
+		}
+		.avatars{
+			text-align: center;
+			margin-top: 50px;
+			width: 90%;
+			display: inline;
+			.person{
+				display: inline-block;
+				height: 180px;
+				width: 180px;
+				padding: 20px;
+				margin: 20px;
+				margin-top: 50px;
+				background-color: green;
+				font-size: 2em;
+				font-family: 'roman';
+				text-align: center;
+				transition: all 0.2s;
+				&:hover{
+					transform: rotate(30deg);
+				}
+				&:nth-child(1){
+					background-image: url(img/people/ranodeep.jpg);
+				}
+				&:nth-child(2){
+					background-image: url(img/people/priyansu.jpg);
+				}
+				&:nth-child(3){
+					background-image: url(img/people/ayan.jpg);
+				}
+				&:nth-child(4){
+					background-image: url(img/people/sagnik.jpg);
+				}
+				&:nth-child(5){
+					background-image: url(img/people/jayant.jpg);
+				}
+				a{
+					display: inline-block;
+					position: relative;
+					top: 60%;
+					color: white;
+				}
+				background-size: cover;	
+			}
+		}
 	}
 	.section{
 		text-align: center;
 		padding-top: 80px;
+		overflow-y: auto;
+	}
+}
+
+.invitationForm{
+	background-image: url('img/section/wall2.jpg');
+	background-size: cover;
+	font-family: 'otari';
+	text-shadow: 1px 2px 5px black;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	h2{
+		font-size: 4em;
+	}
+	h3{
+		font-size: 3em;
+	}
+	h4{
+		font-size: 2.5em;
+		color: white;
+	}
+	p{
+		font-size: 1.8em;
+	}
+	display: inline-block;
+	table{
+		display: inline-block;
+		tr{
+			color: #fff;
+			font-size: 1.4em;
+			padding: 10px;
+			td{
+				padding: 5px;
+				input{
+					width: 100%;
+					border-radius: 5px;
+					border-width: 0;
+					box-shadow: 0px 2px 2px @darkblue inset;
+					background-color: lighten( @lightblue, 50%);
+					height: 100%;
+					text-align: center;
+					color: black;
+				}
+			}
+		}
+	}
+	button{
+		position: relative;
+		z-index: 2;
+		margin-top: 10px;
+		padding: 10px;
+		border-radius: 5px;
+		background-color: darken(@blue, 20%);
+		border-width: 0;
+		box-shadow: 0px 5px 0px 0px darken(@blue, 40%),0px -2px 3px darken(@blue, 40%) inset;
+		font-size: 1.6em;
+		color: white;
+		font-family: 'quicksandregular';
+		&:active{
+			margin-top: 13px;
+			margin-bottom: -3px;
+			box-shadow: 0px 2px 0px 0px darken(@blue, 40%),0px -2px 3px darken(@blue, 40%) inset;
+		}
+	}
+}
+.campamb{
+	padding: 40px;
+	padding-bottom: 0;
+	background-image: url('img/section/wall2.jpg');
+	background-size: cover;
+	font-family: 'otari';
+	text-shadow: 1px 2px 5px black;
+	color: #fff;
+	height: 100%;
+	h2{
+		font-size: 3.2em;
+		margin-top: -20px;
+	}
+	h3{
+		font-size: 2.4em;
+		margin-bottom: -30px;
+	}
+	h4{
+		font-size: 2.1em;
+		color: white;
+	}
+	p{
+		font-size: 1.4em;
+	}
+	display: inline-block;
+}
+
+
+
+
+
+#members{
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	position: absolute;
+	background-image: url('img/section/wall2.jpg');
+	background-size: cover;
+	font-family: 'otari';
+	text-shadow: 1px 2px 5px black;
+	color: #fff;
+	h2{
+		font-size: 4em;
+	}
+	.member{
+		height: 400px;
+		margin: 40px;
+		.face{
+			height: 100%;
+			width: 300px;
+			display: inline-block;
+			float: left;
+			img{
+				width: 100%;
+			}
+		}
+		.data{
+			text-align: left;
+			h2,h3,h4,p,a{
+				position: relative;
+				left: 30px;
+			}
+			a{
+				display: inline-block;
+				border-style: solid;
+				border-width: 2px;
+				border-radius: 5px;
+				margin: 2px;
+				margin-top: 5px;
+				padding: 2px;
+				&.committeeGuy{
+					color: lightgreen;
+				}
+				&.representativeGuy{
+					color: yellow;
+				}
+			}
+			h2{
+				font-size: 3.5em;
+				a{
+					border: none;
+					margin: 0;
+					padding: 0;
+					left: 0;
+					color: white;
+					&:hover{
+						text-decoration: underline;
+						&:after{
+							content: ' -> Facebook';
+						}
+					}
+				}
+			}
+			h3{
+				font-size: 3em;
+			}
+			h4{
+				font-size: 2.5em;
+				color: white;
+				&.extraedu{
+					font-size: 2.2em;
+				}
+			}
+			p{
+				font-size: 1.8em;
+			}
+		}
 	}
 }
 
@@ -556,10 +934,7 @@ video {
 
 
 
-
-
 // CHANGEABLE CLASSES
-
 .stickToTop{
 	position: fixed;
 	left: 0;
