@@ -1,7 +1,7 @@
 <h2>Konstruct Campus Ambassador Program</h2>
 <h3>Want to be a cog in the Open Source machine? <a href="campusambassador.php">Learn More.</a></h3>
-<h4>Now is your chance to be a part of the finest in Kolkata!</h4>
-<p>Konstruct is home to some of the greatest Open Source Software and Security groups, companies and individuals. To be a part of it, all you have to do is fill the form below.</p>
+<h4 class="hideonextra">Now is your chance to be a part of the finest in Kolkata!</h4>
+<p class="hideonextra">Konstruct is home to some of the greatest Open Source Software and Security groups, companies and individuals. To be a part of it, all you have to do is fill the form below.</p>
 <form id="sap" class="contactForm">
 	<table>
 		<tr>
@@ -20,7 +20,7 @@
 			<td>Instituition (School/College):</td>
 			<td><input id="insti" name="insti"></td>
 		</tr>
-		<tr>
+		<tr class="hideonextra">
 			<td>Favorite Open Source Software:</td>
 			<td><input id="app" name="app"></td>
 		</tr>

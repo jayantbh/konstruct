@@ -12,19 +12,19 @@
 				<li>
 					<a>Events</a>
 					<ul>
-						<li><a href="#">Day 1</a><ul>
-								<li><a href="#">Fedora - How to get Involved</a></li>
-								<li><a href="#">Internshala - Student Internships</a></li>
-								<li><a href="#">Linux Users Group - Workshop</a></li>
+						<li><a>Day 1</a><ul>
+								<li><a href="./events.php">Internshala - Student Internships</a></li>
+								<li><a href="./events.php">Linux Users Group - Workshop</a></li>
+								<li><a href="./events.php">Code Competition - Code Club WBUT</a></li>
 							</ul></li>
-						<li><a href="#">Day 2</a><ul>
-								<li><a href="#">Null - Kolkata Launch</a></li>
-								<li><a href="#">Python - Seminar and Workshop</a></li>
-								<li><a href="#">Wikipedia - Seminar</a></li>
+						<li><a>Day 2</a><ul>
+								<li><a href="./events.php">Null - Kolkata Launch</a></li>
+								<li><a href="./events.php">Wikipedia - Seminar and Editathon</a></li>
+								<li><a href="./events.php">Scrollback.io event</a></li>
 							</ul></li>
-						<li><a href="#">Day 3</a><ul>
-								<li><a href="#">Mozilla - FOSS Seminar</a></li>
-								<li><a href="#">Java Users Group - Workshop</a></li>
+						<li><a>Day 3</a><ul>
+								<li><a href="./events.php">Mozilla - FOSS Seminar</a></li>
+								<li><a href="./events.php">Java Users Group - Workshop</a></li>
 							</ul></li>
 					</ul>
 				</li>
@@ -52,12 +52,13 @@
 					<ul>
 						<li><a href="https://www.mozilla.org/en-US/">Mozilla</a></li>
 						<li><a href="https://www.getfedora.org/">Fedora</a></li>
+						<li><a href="https://scrollback.io">Scrollback.io</a></li>
+						<li><a>Code Club WBUT</a></li>
 						<li><a href="http://www.internshala.com/">Internshala</a></li>
 						<li><a href="http://www.null.co.in">NULL</a></li>
 						<li><a href="http://www.wikipedia.org">Wikipedia</a></li>
 						<li><a href="http://www.ilug-cal.info/">Linux Users Group</a></li>
 						<li><a href="http://www.oracle.com/">Oracle</a></li>
-						<li><a href="https://www.python.org/">Python</a></li>
 						<li><a href="http://www.java.net/jugs/java-user-groups">Java Users Group</a></li>
 						<li><a href="http://www.wipro.com/">Wipro</a></li>
 					</ul>

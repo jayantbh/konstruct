@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/less" href="css/card.less">
 	<link rel="stylesheet" media="(min-width: 600px) and (max-width: 800px) and (orientation: landscape)" type="text/less" href="css/style_small.less">
 	<link rel="stylesheet" media="(min-width: 400px) and (max-width: 480px) and (orientation: portrait)" type="text/less" href="css/style_small_portrait.less">
-	<link rel="stylesheet" media="(min-width: 601px) and (max-width: 1400px) and (orientation: landscape)" type="text/less" href="css/style.less">
+	<link rel="stylesheet" media="(min-width: 901px) and (max-width: 1400px) and (orientation: landscape)" type="text/less" href="css/style.less">
 	<link rel="stylesheet" media="(min-width: 481px) and (max-width: 720px) and (orientation: portrait)" type="text/less" href="css/style_HDPI_portrait.less">
 	<link rel="stylesheet" media="(min-width: 1401px) and (orientation: landscape)" type="text/less" href="css/style_HD.less">
 

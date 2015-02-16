@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/less" href="css/card.less">
 	<link rel="stylesheet" media="(min-width: 600px) and (max-width: 800px) and (orientation: landscape)" type="text/less" href="css/style_small.less">
 	<link rel="stylesheet" media="(min-width: 400px) and (max-width: 480px) and (orientation: portrait)" type="text/less" href="css/style_small_portrait.less">
-	<link rel="stylesheet" media="(min-width: 601px) and (max-width: 1400px) and (orientation: landscape)" type="text/less" href="css/style.less">
+	<link rel="stylesheet" media="(min-width: 901px) and (max-width: 1400px) and (orientation: landscape)" type="text/less" href="css/style.less">
 	<link rel="stylesheet" media="(min-width: 481px) and (max-width: 720px) and (orientation: portrait)" type="text/less" href="css/style_HDPI_portrait.less">
 	<link rel="stylesheet" media="(min-width: 1401px) and (orientation: landscape)" type="text/less" href="css/style_HD.less">
 
@@ -21,7 +21,7 @@
 		<h3>All you need to know about it.</h3><br><br>
 		<p class="Q">WHO IS A CAMPUS AMBASSADOR?</p>
 		<p class="A">Campus Ambassador is a person responsible for publicizing and promoting Konstruct in their college. The Ambassador will be representative of Konstruct, WBUT-InHouse in his/her college. It is a unique opportunity for students to enhance their skills in the fields of publicity, marketing, networking ,and maintaining public relations at a national level by acting as the Campus Ambassador for their college. A representative from the college will be chosen to promote and publicize. </p><br>
-		<p class="Q">THE FRAMEWORK OF RESPONSIBILITIES THAT THE AMBASSADORS NEED TO TAKE ON</p>x
+		<p class="Q">THE FRAMEWORK OF RESPONSIBILITIES THAT THE AMBASSADORS NEED TO TAKE ON</p>
 		<p class="A">Work on Campus as a representative of Konstruct 2015.<br>
 		Create Brand Awareness for Konstruct 2015 in and around your Campus.<br>
 		a) Putting up posters of our events on student notice boards.<br>

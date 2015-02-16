@@ -105,57 +105,6 @@ button{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	.cover{
-		position: relative;
-		z-index: 10;
-		height: 100%;
-		width: 100%;
-		overflow: hidden;
-		.shutter{
-			position: absolute;
-			margin: auto;
-			height: 100%;
-			width: 100%;
-			background-image: url('img/welcome/wood3.jpg');
-			background-size: cover;
-			> button{
-				display: inline-block;
-				top: 400px;
-				color: white;
-				font-size: 1.2em;
-			}
-			h1{
-				display: inline-block;
-				font-size: 4em;
-				margin-top: 200px;
-				color: #fff;
-				font-weight: bolder;
-				text-shadow: 1px 2px 3px #000;
-				margin-bottom: -500px;
-			}
-			form{
-				height: 150px;
-				width: 210px;
-				input{
-					height: 40px;
-					width: 200px;
-					margin: 5px;
-					font-size: 15px;
-					font-weight: bolder;
-				}
-				button{
-					height: 40px;
-					margin: 5px;
-					color: #fff;
-				}
-				position: absolute;
-				bottom: 100;
-				right: 0;
-				left: 0;
-				margin: auto;
-			}
-		}
-	}
 	.welcomeInfo{
 		width: 800px;
 		height: 60%;
@@ -917,7 +866,34 @@ button{
 
 
 
-
+.events{
+	text-align: center;
+	width: 100%;
+	section{
+		&.day{
+			display: inline-block;
+			margin: 10px;
+			width: 90%;
+			background-color: white;
+			border-radius: 5px;
+			h2{
+				font-size: 3em;
+			}
+			table{
+				display: inline-block;
+				border-spacing: 10px;
+				font-size: 2em;
+				.infoBubble{
+					display: inline-block;
+					border-width: 2px;
+					border-style: solid;
+					border-radius: 5px;
+					color: green;
+				}
+			}
+		}
+	}
+}
 
 
 

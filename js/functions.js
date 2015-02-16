@@ -5,28 +5,34 @@ $(document).ready(function(){
 	$(".cover").delay(1000).fadeOut(1000);
 	$(".welcome").css("background-image","url('css/img/bgs/"+Math.floor((new Date).getHours()/2)+".jpg')");
 	
-	setInterval(function(){
-		if((Date.now()/1000)>1425031200)//VERIFY
-			window.location.assign("./");
-		console.log((Date.now()/1000)-1425031200)
-	},2000);
-	if(window.innerWidth<=1400){
+	if(window.innerWidth<=800){
 	  //var vid=$("#video").attr("src");
 	  //alert(vid);
-	  $("#video").attr("src","css/LoopVid/LoopVid_sd.mp4");
+		$("video").remove();
+		$(".countdown").remove();
+		$(".coms2").parent().remove();
+	}
+	else if(window.innerWidth<=1400){
+		$("#video").attr("src","css/LoopVid/LoopVid_sd.mp4");
 	}
 	else{
 	  $("#video").attr("src","css/LoopVid/LoopVid.mp4");
 	}
+	if(window.innerHeight<500){
+		$(".hideonextra").remove();
+	}
 	var i=0,j=0;
 	setInterval(function(){
-	  if(window.innerWidth<=1400){
-		 $(".days .coms1").attr("src","css/img/coms_sd/"+(i++%6)+".png");
-		 $(".days .coms2").attr("src","css/img/coms_sd/"+(6+(j++%5))+".png");
+	  if(window.innerWidth<=800){
+		 $(".days .coms1").attr("src","css/img/coms_sd/"+(i++%10)+".png");
+	  }
+	  else if(window.innerWidth<=1400){
+		 $(".days .coms1").attr("src","css/img/coms_sd/"+(i++%5)+".png");
+		 $(".days .coms2").attr("src","css/img/coms_sd/"+(5+(j++%5))+".png");
 	  }
 	  else{
-		 $(".days .coms1").attr("src","css/img/coms/"+(i++%6)+".png");
-		 $(".days .coms2").attr("src","css/img/coms/"+(6+(j++%5))+".png");
+		 $(".days .coms1").attr("src","css/img/coms/"+(i++%5)+".png");
+		 $(".days .coms2").attr("src","css/img/coms/"+(5+(j++%5))+".png");
 	  }
 	},500);
 	$("#entry").click(function(){
@@ -64,10 +70,13 @@ $("#inviform").submit(function(e){
 	var mail=$(this).find("#mail").val().trim();
 	var num=$(this).find("#num").val().trim();
 	var insti=$(this).find("#insti").val().trim();
+	var twit=$(this).find("#twit").val().trim();
+	var fburl=$(this).find("#fburl").val().trim();
+	var urblog=$(this).find("#urblog").val().trim();
 	var com=$(this).find("#com").val().trim();
 	//alert("Under dev.\nYou entered:\nName: "+name+"\nMail: "+mail+"\nNumber: "+num+"\nInsti: "+insti+"\nCommunity: "+com);
 	$(".submitter").text("Please wait.");
-	$.post("page/mailrequest.php",{name:name,mail:mail,num:num,insti:insti,com:com},function(data){
+	$.post("page/mailrequest.php",{name:name,mail:mail,num:num,insti:insti,fburl:fburl,twit:twit,urblog:urblog,com:com},function(data){
 		if(data=="sent")
 			alert("Request Sent. Please wait while we mail a response on the given Email ID.");
 		else
