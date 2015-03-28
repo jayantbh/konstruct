@@ -3,8 +3,8 @@
 	<div id="ranodeep" class="member">
 		<div class="face"><img src="css/img/people/ranodeep.jpg"></div>
 		<div class="data">
-			<h2 class="name"><a href="https://facebook.com/ranodeep">Ranodeep Saha</a></h2><div class="tags"><a class="committeeGuy">Committee</a><a class="representativeGuy">Representative</a></div>
-			<h3 class="oneline">Open Source Enthusiast</h3>
+			<h2 class="name"><a href="https://mozillians.org/en-US/u/rano1396/">Ranodeep Saha</a></h2><div class="tags"><a class="committeeGuy">Committee</a><a class="representativeGuy">Representative</a></div>
+			<h3 class="oneline">Mozillian</h3>
 			<h4 class="edu">Studies at West Bengal University of Technology, Salt Lake</h4>
 			<h4 class="extraedu">B. Tech. CSE, 1st year</h4>
 			<p class="about">The guy who organised it all!</p>
@@ -13,8 +13,8 @@
 	<div id="jayant" class="member">
 		<div class="face"><img src="css/img/people/jayant.jpg"></div>
 		<div class="data">
-			<h2 class="name"><a href="https://facebook.com/jayantbhawal">Jayant Bhawal</a></h2><div class="tags"><a class="committeeGuy">Committee</a></div>
-			<h3 class="oneline">Emerging web developer.</h3>
+			<h2 class="name"><a href="https://careers.stackoverflow.com/jayant">Jayant Bhawal</a></h2><div class="tags"><a class="committeeGuy">Committee</a></div>
+			<h3 class="oneline">Web development enthusiast.</h3>
 			<h4 class="edu">Studies at West Bengal University of Technology, Salt Lake</h4>
 			<h4 class="extraedu">B. Tech. CSE, 2nd year</h4>
 			<p class="about">The guy responsible for the entire web presence, i.e. the website and social media.</p>
@@ -33,7 +33,7 @@
 	<div id="sagnik" class="member">
 		<div class="face"><img src="css/img/people/sagnik.jpg"></div>
 		<div class="data">
-			<h2 class="name"><a href="https://facebook.com/chatsagnik">Sagnik Chatterjee</a></h2><div class="tags"><a class="committeeGuy">Committee</a></div>
+			<h2 class="name"><a href="https://chatsagnik.wordpress.com/">Sagnik Chatterjee</a></h2><div class="tags"><a class="committeeGuy">Committee</a></div>
 			<h3 class="oneline">Reading enthusiast, thinker, writer.</h3>
 			<h4 class="edu">Studies at West Bengal University of Technology, Salt Lake</h4>
 			<h4 class="extraedu">B. Tech. CSE, 2nd year</h4>

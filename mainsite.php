@@ -18,6 +18,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
 	<script type="text/javascript" src="js/less.min.js"></script>
+	<script>window.scrollback = {"room":"konstructwbut","form":"toast","minimize":false};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));</script>
 </head>
 <body>
 	<?php require_once 'page/header.php';?>

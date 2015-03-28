@@ -17,9 +17,8 @@
 </head>
 <body>
 	<div class="invitationForm">
-		<h2>Konstruct Fest: Invitation Form</h2>
-		<h3>Konstruct - by WBUT - is an Invite Only event. Submit a request to get an invite.</h3>
-		<p>WBUT-InHouse students and staff don't need invitations.</p>
+		<h2>Konstruct Fest: Registration Form</h2>
+		<h3>Konstruct - by WBUT. Submit a request to register for the event.</h3>
 		<form id="inviform" class="invite">
 			<table>
 				<tr>

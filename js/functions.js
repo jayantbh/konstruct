@@ -28,11 +28,11 @@ $(document).ready(function(){
 	  }
 	  else if(window.innerWidth<=1400){
 		 $(".days .coms1").attr("src","css/img/coms_sd/"+(i++%5)+".png");
-		 $(".days .coms2").attr("src","css/img/coms_sd/"+(5+(j++%5))+".png");
+		 $(".days .coms2").attr("src","css/img/coms_sd/"+(5+(j++%4))+".png");
 	  }
 	  else{
 		 $(".days .coms1").attr("src","css/img/coms/"+(i++%5)+".png");
-		 $(".days .coms2").attr("src","css/img/coms/"+(5+(j++%5))+".png");
+		 $(".days .coms2").attr("src","css/img/coms/"+(5+(j++%4))+".png");
 	  }
 	},500);
 	$("#entry").click(function(){
